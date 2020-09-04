@@ -17,7 +17,7 @@ function test_allow_no_dependencies() {
     }
   };
 
-  var result = classicDependencies(event);
+  var result = coreDependencies(event);
 
   if (result) {
     console.log("passed ✅ allow event with no dependencies");
