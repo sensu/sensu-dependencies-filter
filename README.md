@@ -101,7 +101,7 @@ spec:
   runtime_assets:
   - sensu-pagerduty-handler
   filters:
-  - dependencies-filter
+  - dependencies
 ```
 
 ### Acknowledgements
