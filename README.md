@@ -61,7 +61,7 @@ Or whatever method as appropriate for the entity type or your Sensu version.
 #### Asset Registration
 
 ```
-sensuctl asset add senmsu/sensu-dependencies-filter -r dependencies-filter
+sensuctl asset add sensu/sensu-dependencies-filter -r dependencies-filter
 ```
 
 #### Filter definition
