@@ -8,11 +8,11 @@
 
 ### Overview
 
-This Sensu Go filter looks for dependencies defined in check and entity annotations and invokes the [`sensu.CheckDependencies` query expression][1] to determine if any of the defined dependecies are in a non-OK state.
+This Sensu Go filter looks for dependencies defined in check and entity annotations and invokes the [`sensu.CheckDependencies` query expression][2] to determine if any of the defined dependecies are in a non-OK state.
 
 ### coreDependencies
 
-The `coreDependencies` function implemented by this library is intended as proof-of-concept reproduction of the [Sensu Core `dependencies` filter][2].
+The `coreDependencies` function implemented by this library is intended as proof-of-concept reproduction of the [Sensu Core `dependencies` filter][4].
 
 In Sensu Core the dependencies were expressed as an array. For this implementation I've chosen to use comma separated values.
 
@@ -106,8 +106,9 @@ spec:
 
 ### Acknowledgements
 
-Inspired by Sensu Core [dependencies filter extension][1].
+Inspired by Sensu Core [dependencies filter extension][2].
 
-[1]: https://docs.sensu.io/sensu-go/latest/reference/sensu-query-expressions/#sensucheckdependencies
+[1]: https://docs.sensu.io/sensu-go/latest/observability-pipeline/observe-filter/sensu-query-expressions/#sensucheckdependencies
 [2]: https://github.com/sensu/sensu-extensions-check-dependencies
 [3]: #Usage-examples
+[4]: https://docs.sensu.io/sensu-core/latest/reference/filters/#check-dependencies-filter
